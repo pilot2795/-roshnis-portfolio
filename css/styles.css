@@ -1523,3 +1523,10 @@ p, li, dd { text-wrap: pretty; }
 }
 
 .store-wide figcaption p { margin-top: 0; }
+
+/* Footer: a more compact "Let's talk" */
+.site-footer { padding-top: clamp(3.5rem, 6vw, 5.5rem); }
+.footer__title { font-size: clamp(3.5rem, 10vw, 9rem); }
+.footer__grid { margin-top: clamp(1.75rem, 3vw, 2.75rem); }
+.footer__email { font-size: clamp(1.25rem, 2.2vw, 2rem); }
+.footer__bottom { margin-top: clamp(3rem, 6vw, 5rem); }
