@@ -1472,3 +1472,54 @@ p, li, dd { text-wrap: pretty; }
 @media (min-width: 760px) and (max-width: 1099.98px) {
   .tiles { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Naturals store: large, image-led layout */
+.store-pair,
+.store-trio {
+  display: grid;
+  gap: clamp(2.5rem, 4vw, 3.5rem) var(--gap);
+}
+
+@media (min-width: 760px) {
+  .store-pair { grid-template-columns: 1fr 1fr; }
+  .store-trio { grid-template-columns: repeat(3, 1fr); }
+}
+
+.store-shot img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.store-trio .store-shot img { aspect-ratio: 2 / 3; }
+
+.store-wide img {
+  width: 100%;
+  height: 92vh;
+  height: 92svh;
+  min-height: 24rem;
+  max-height: none;
+  object-fit: cover;
+}
+
+.store-shot figcaption,
+.store-wide figcaption { margin-top: 1.25rem; }
+
+.store-wide figcaption {
+  display: grid;
+  gap: .5rem var(--gutter);
+  padding-inline: var(--gutter);
+}
+
+@media (min-width: 960px) {
+  .store-wide figcaption { grid-template-columns: 5fr 7fr; align-items: start; }
+}
+
+.store-shot figcaption p,
+.store-wide figcaption p {
+  max-width: 46ch;
+  margin-top: .75rem;
+  color: var(--ink-soft);
+}
+
+.store-wide figcaption p { margin-top: 0; }
