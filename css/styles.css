@@ -1431,3 +1431,11 @@ p, li, dd { text-wrap: pretty; }
 .jm-lede { font-size: 6.6px; }
 .jm-quote { font-size: 5.7px; }
 .jm-step { font-size: 5.5px; }
+
+.zone__text {
+  max-width: 28ch;
+  margin-top: .9rem;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.45;
+}
