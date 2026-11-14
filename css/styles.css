@@ -1424,3 +1424,110 @@ p, li, dd { text-wrap: pretty; }
 .zd-ring text { fill: #fff; font-size: 15px; font-weight: 500; letter-spacing: .02em; }
 .zd-group { fill: #222; font-size: 14px; font-weight: 600; }
 .zd-item { fill: #222; font-size: 12.6px; font-weight: 400; }
+
+/* TATA.ev journey map: five scenes, each with its quotes, render and steps along a dotted path */
+.jmap > * + * { margin-top: clamp(3.5rem, 7vw, 6rem); }
+
+.jmap__scene {
+  display: grid;
+  gap: 1.75rem var(--gutter);
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .jmap__scene { grid-template-columns: 5fr 7fr; }
+  .jmap__steps { grid-column: 1 / -1; }
+}
+
+.jmap__lede {
+  max-width: 30ch;
+  font-size: clamp(1.125rem, 1.5vw, 1.3125rem);
+  line-height: 1.4;
+}
+
+.jmap__quotes { margin-top: 1.5rem; }
+
+.jmap__quotes li {
+  display: grid;
+  grid-template-columns: 2.75rem 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding-block: .55rem;
+}
+
+.jmap__quotes img {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.jmap__quotes q {
+  color: var(--ink-soft);
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.jmap__render { width: 100%; }
+
+/* Steps: a dotted path through the icons */
+.jmap__steps {
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+  counter-reset: none;
+}
+
+.jmap__steps::before {
+  content: "";
+  position: absolute;
+  top: 1.75rem;
+  bottom: 1.75rem;
+  left: 1.75rem;
+  border-left: 1px dashed #9a9a94;
+}
+
+.jmap__steps li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.jmap__steps img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: var(--paper);
+}
+
+.jmap__steps p {
+  color: var(--ink-soft);
+  font-size: .9375rem;
+  line-height: 1.45;
+}
+
+@media (min-width: 760px) {
+  .jmap__steps {
+    grid-template-columns: repeat(var(--n), 1fr);
+    gap: var(--gap);
+  }
+
+  .jmap__steps::before {
+    top: 1.75rem;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    border-left: 0;
+    border-top: 1px dashed #9a9a94;
+  }
+
+  .jmap__steps li {
+    grid-template-columns: 1fr;
+    align-content: start;
+    justify-items: center;
+    text-align: center;
+  }
+}
