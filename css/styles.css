@@ -813,12 +813,6 @@ p, li, dd { text-wrap: pretty; }
   color: var(--ink-soft);
 }
 
-.chapter__text p:first-child {
-  color: var(--ink);
-  font-size: clamp(1.25rem, 1.75vw, 1.5rem);
-  line-height: 1.42;
-}
-
 .fig img { width: 100%; }
 
 .fig--diagram {
