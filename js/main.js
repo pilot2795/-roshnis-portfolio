@@ -1,4 +1,13 @@
 (() => {
+  // Always open a page at the top (unless a link points to a section on it),
+  // instead of restoring an old scroll position.
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  const toTop = () => {
+    if (!location.hash) window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  };
+  toTop();
+  window.addEventListener('pageshow', toTop);
+
   const header = document.querySelector('.site-header');
 
   // The header sits transparent over a full-bleed hero, then turns solid as the hero title reaches it,
