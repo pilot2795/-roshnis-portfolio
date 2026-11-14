@@ -1417,3 +1417,10 @@ p, li, dd { text-wrap: pretty; }
     animation-iteration-count: 1 !important;
   }
 }
+
+/* TATA.ev zoning diagram: shapes and plan placed exactly as the original artwork, with live text */
+.zoning-diagram { display: block; width: 100%; height: auto; }
+.zoning-diagram text { font-family: "Raleway", "Helvetica Neue", Arial, sans-serif; }
+.zd-ring text { fill: #fff; font-size: 15px; font-weight: 500; letter-spacing: .02em; }
+.zd-group { fill: #222; font-size: 14px; font-weight: 600; }
+.zd-item { fill: #222; font-size: 12.6px; font-weight: 400; }
