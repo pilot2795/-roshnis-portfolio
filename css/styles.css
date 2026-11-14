@@ -1424,3 +1424,10 @@ p, li, dd { text-wrap: pretty; }
 .zd-ring text { fill: #fff; font-size: 15px; font-weight: 500; letter-spacing: .02em; }
 .zd-group { fill: #222; font-size: 14px; font-weight: 600; }
 .zd-item { fill: #222; font-size: 12.6px; font-weight: 400; }
+
+/* TATA.ev journey map: original artwork with its text retyped as live text in the same positions */
+.journey-map { display: block; width: 100%; height: auto; }
+.journey-map text { font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; font-weight: 500; fill: #1f1f1f; }
+.jm-lede { font-size: 6.6px; }
+.jm-quote { font-size: 5.7px; }
+.jm-step { font-size: 5.5px; }
