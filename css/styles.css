@@ -1104,7 +1104,7 @@ p, li, dd { text-wrap: pretty; }
   padding-bottom: 2.75rem;
 }
 
-.spectrum__end { font-size: clamp(2.5rem, 6vw, 5.5rem); }
+.spectrum__end { font-size: clamp(1.75rem, 3vw, 2.75rem); }
 
 .spectrum__scale {
   position: relative;
