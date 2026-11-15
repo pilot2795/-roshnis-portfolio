@@ -1715,3 +1715,6 @@ p, li, dd { text-wrap: pretty; }
 .zp-t2 { font-family: var(--serif) !important; font-size: 10.5px; }
 .zp-entry { font-size: 11px; font-weight: 700; letter-spacing: .12em; }
 .zp-side { font-size: 14px; }
+.zoning-plan .zp-t1 { font-size: 64px; stroke-width: 10px; }
+.zoning-plan .zp-t2b { font-family: var(--display); font-size: 44px; font-weight: 800; letter-spacing: .06em; stroke-width: 9px; }
+.zoning-plan .zp-t3 { font-family: var(--serif); font-size: 32px; stroke-width: 8px; }
