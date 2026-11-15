@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@500..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&display=swap">
-  <link rel="stylesheet" href="css/styles.css?v=20261115s">
+  <link rel="stylesheet" href="css/styles.css?v=20261115u">
   <script>document.documentElement.classList.add('js');if('scrollRestoration' in history)history.scrollRestoration='manual';</script>
   <script src="js/main.js?v=20261114" defer></script>
 </head>
@@ -53,26 +53,28 @@
       </div>
     </section>
 
-    <section class="lab" aria-label="Experiments">
-      <article class="lab__feature">
-        <figure class="lab__hero"><img src="assets/img/ai-appliance-experience.jpg" width="1920" height="1086" alt="An AI-generated concept for an appliance experience centre: a demo café with a robotic arm, a ‘Stain Bar’ of washing machines where visitors test fabrics, expert workshop zones and interactive kiosks under ring-lit ceilings." loading="lazy" decoding="async"></figure>
-        <div class="lab__body">
-          <div>
-            <p class="label lab__tool">Pitch concept · AI visualisation</p>
-            <h2 class="lab__title">From showroom to lab</h2>
-          </div>
-          <div class="lab__copy">
-            <p>An appliance brand wanted to be seen as more than boxes on a showroom floor. The idea: don’t tell customers what the machines can do, let them prove it.</p>
-            <ul class="lab__points">
-              <li><b>The Café</b> Live cooking demos.</li>
-              <li><b>The Stain Bar</b> Bring a stain, pick a cycle, see the result.</li>
-              <li><b>Laundry Expert</b> Fabric-care workshops.</li>
-              <li><b>Discovery kiosks</b> Products matched to each home.</li>
-            </ul>
-            <p>Visualised with AI at pitch stage, in hours, not weeks.</p>
-          </div>
-        </div>
-      </article>
+    <section class="lab" aria-labelledby="lab-appliance">
+      <div class="lab__intro">
+        <p class="label lab__tool">Pitch concept · AI visualisation</p>
+        <h2 class="lab__title" id="lab-appliance">From showroom to lab</h2>
+        <p class="lab__lede">An appliance brand wanted to be seen as more than boxes on a showroom floor. Two explorations, visualised with AI at pitch stage.</p>
+      </div>
+
+      <figure class="lab__shot">
+        <img src="assets/img/ai-appliance-experience.jpg" width="1920" height="1086" alt="AI-generated concept: a demo café with a robotic arm, a ‘Stain Bar’ of washing machines where visitors test fabrics, expert workshop zones and interactive kiosks under ring-lit ceilings." loading="lazy" decoding="async">
+        <figcaption class="lab__note">
+          <p class="lab__note-title">Exploration 01 · Prove it yourself</p>
+          <p>Bring a stain, pick a cycle, see the result. Cook at a live demo. Learn at a fabric-care workshop.<br>Don’t tell customers what the machines can do, let them prove it.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="lab__shot">
+        <img src="assets/img/ai-appliance-home.jpg" width="2000" height="950" alt="AI-generated concept: a warm, plant-filled home-like space with a guided cooking counter, a café bar, a cooling zone and a laundry wall with washing machines." loading="lazy" decoding="async">
+        <figcaption class="lab__note">
+          <p class="lab__note-title">Exploration 02 · The home, alive in action</p>
+          <p>A host invites you to explore the appliance of your choice. Cook through a guided recipe. Test today’s laundry. Pause at a coffee nook.<br>By the time you leave, you’ve previewed a better version of your life.</p>
+        </figcaption>
+      </figure>
     </section>
   </main>
 

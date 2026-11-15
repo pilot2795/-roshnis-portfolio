@@ -1679,3 +1679,24 @@ p, li, dd { text-wrap: pretty; }
 .lab__points li { padding-block: .7rem; border-top: 1px solid var(--line); color: var(--ink-soft); }
 .lab__points li:last-child { border-bottom: 1px solid var(--line); }
 .lab__points b { display: block; color: var(--ink); font-weight: 600; }
+
+/* AI Lab: hero images with an overlaid concept note */
+.lab__intro { max-width: 46rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
+.lab__intro .lab__tool { margin-top: 0; }
+.lab__intro .lab__title { font-size: clamp(2.5rem, 5vw, 4.5rem); }
+.lab__lede { margin-top: 1rem; color: var(--ink-soft); }
+.lab__shot { position: relative; margin-inline: calc(-1 * var(--gutter)); background: var(--night); }
+.lab__shot + .lab__shot { margin-top: var(--gap); }
+.lab__shot img { width: 100%; }
+.lab__note { padding: 1.5rem var(--gutter) 1.75rem; color: #fff; text-align: center; }
+.lab__note-title { font-family: var(--display); font-weight: 700; font-size: 1.0625rem; letter-spacing: .28em; text-transform: uppercase; }
+.lab__note p + p { margin-top: .6rem; font-size: .9375rem; line-height: 1.5; color: rgb(255 255 255 / .88); }
+@media (min-width: 760px) {
+  .lab__note { position: absolute; inset: auto 0 0; padding: 6rem var(--gutter) clamp(1.5rem, 3vw, 2.5rem);
+    background: linear-gradient(to top, rgb(0 0 0 / .62), rgb(0 0 0 / .32) 55%, rgb(0 0 0 / 0)); }
+  .lab__note p + p { max-width: 44rem; margin-inline: auto; }
+}
+@media (min-width: 760px) {
+  .lab__note-title { font-size: clamp(1.125rem, 1.5vw, 1.375rem); }
+  .lab__note p + p { font-size: clamp(.9375rem, 1.1vw, 1.0625rem); }
+}
