@@ -1647,3 +1647,7 @@ p, li, dd { text-wrap: pretty; }
 .cliq-trio img { width: 100%; aspect-ratio: 5 / 8; object-fit: cover; }
 .tev-gallery__grid figure:not(.tev-gallery__tall) img { aspect-ratio: 4 / 3; }
 @media (min-width: 760px) { .tev-gallery__offset--portrait { width: 50%; } }
+.cliq-pair { display: grid; gap: var(--gap); }
+.cliq-pair img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.cliq-pair--tall img { aspect-ratio: 3 / 4; }
+@media (min-width: 760px) { .cliq-pair { grid-template-columns: 1fr 1fr; } }
