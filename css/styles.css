@@ -1530,3 +1530,7 @@ p, li, dd { text-wrap: pretty; }
 .footer__grid { margin-top: clamp(1.75rem, 3vw, 2.75rem); }
 .footer__email { font-size: clamp(1.25rem, 2.2vw, 2rem); }
 .footer__bottom { margin-top: clamp(3rem, 6vw, 5rem); }
+
+@media (min-width: 640px) {
+  .facts { grid-template-columns: repeat(2, 1fr); row-gap: 2.25rem; }
+}
