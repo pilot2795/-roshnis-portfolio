@@ -1619,3 +1619,6 @@ p, li, dd { text-wrap: pretty; }
   .tev-gallery__tall img { position: absolute; inset: 0; }
   .tev-gallery__offset { width: 83.333%; margin-left: auto; }
 }
+.tev-gallery__pair { display: grid; gap: var(--gap); }
+.tev-gallery__pair img { aspect-ratio: 3 / 2; }
+@media (min-width: 760px) { .tev-gallery__pair { grid-template-columns: 1fr 1fr; } }
