@@ -1638,3 +1638,8 @@ p, li, dd { text-wrap: pretty; }
 .duo--plan .zone ul { margin-top: .4rem; }
 .duo--plan .zone li { padding-block: .05rem; font-size: .8125rem; line-height: 1.4; }
 @media (min-width: 960px) { .duo--plan .zones { row-gap: 1.25rem; } }
+
+/* CLiQ details: two portrait shots, offset to keep them at native size */
+.cliq-duo { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); }
+.cliq-duo img { width: 100%; aspect-ratio: 5 / 8; object-fit: cover; }
+@media (min-width: 760px) { .cliq-duo { width: 66.666%; } }
