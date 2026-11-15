@@ -1560,15 +1560,7 @@ p, li, dd { text-wrap: pretty; }
   counter-increment: award;
 }
 
-.recog__list li::before {
-  content: counter(award, decimal-leading-zero);
-  margin-bottom: 1.5rem;
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: 1.0625rem;
-  letter-spacing: .08em;
-  color: var(--muted);
-}
+.recog__list li::before { content: none; }
 
 .recog__org {
   font-family: var(--display);
