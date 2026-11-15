@@ -1630,3 +1630,11 @@ p, li, dd { text-wrap: pretty; }
   .duo--plan .zones { row-gap: 1.75rem; }
 }
 .journey--plain .stage__title::before { content: none; }
+
+/* CLiQ plan: large drawing with the zones as a compact key */
+.duo--plan .zones { grid-template-columns: repeat(2, 1fr); gap: 1.25rem var(--gap); }
+.duo--plan .zone { padding-top: .6rem; }
+.duo--plan .zone__title { font-size: 1.0625rem; line-height: 1.1; letter-spacing: .04em; }
+.duo--plan .zone ul { margin-top: .4rem; }
+.duo--plan .zone li { padding-block: .05rem; font-size: .8125rem; line-height: 1.4; }
+@media (min-width: 960px) { .duo--plan .zones { row-gap: 1.25rem; } }
