@@ -1707,3 +1707,11 @@ p, li, dd { text-wrap: pretty; }
 .lab-hero + .lab { padding-top: var(--section); }
 .lab-hero .project-hero__sub { max-width: 40ch; }
 @media (prefers-reduced-motion: reduce) { .lab-hero video { display: none; } .lab-hero { background: var(--night) url("../assets/img/lab-hero-poster.jpg") center / cover; } }
+
+/* ZEE5 zoning plan with live labels */
+.zoning-plan { display: block; width: 100%; height: auto; }
+.zoning-plan text { font-family: var(--display); fill: #1a1a1a; paint-order: stroke; stroke: rgb(255 255 255 / .9); stroke-width: 4px; stroke-linejoin: round; }
+.zp-t1 { font-size: 17px; font-weight: 800; letter-spacing: .06em; }
+.zp-t2 { font-family: var(--serif) !important; font-size: 10.5px; }
+.zp-entry { font-size: 11px; font-weight: 700; letter-spacing: .12em; }
+.zp-side { font-size: 14px; }
