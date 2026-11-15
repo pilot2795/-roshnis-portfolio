@@ -1700,3 +1700,5 @@ p, li, dd { text-wrap: pretty; }
   .lab__note-title { font-size: clamp(1.125rem, 1.5vw, 1.375rem); }
   .lab__note p + p { font-size: clamp(.9375rem, 1.1vw, 1.0625rem); }
 }
+.lab + .lab .lab__intro { max-width: none; padding-top: 1.25rem; border-top: 1px solid var(--ink); }
+.lab + .lab .lab__intro > * { max-width: 46rem; }
