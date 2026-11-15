@@ -1643,3 +1643,5 @@ p, li, dd { text-wrap: pretty; }
 .cliq-duo { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); }
 .cliq-duo img { width: 100%; aspect-ratio: 5 / 8; object-fit: cover; }
 @media (min-width: 760px) { .cliq-duo { width: 66.666%; } }
+.cliq-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); }
+.cliq-trio img { width: 100%; aspect-ratio: 5 / 8; object-fit: cover; }
