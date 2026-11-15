@@ -1629,3 +1629,4 @@ p, li, dd { text-wrap: pretty; }
   .duo--plan { align-items: center; column-gap: clamp(2rem, 4vw, 4rem); }
   .duo--plan .zones { row-gap: 1.75rem; }
 }
+.journey--plain .stage__title::before { content: none; }
