@@ -1623,3 +1623,9 @@ p, li, dd { text-wrap: pretty; }
 .tev-gallery__pair img { aspect-ratio: 3 / 2; }
 @media (min-width: 760px) { .tev-gallery__pair { grid-template-columns: 1fr 1fr; } }
 .tev-gallery__wide img { aspect-ratio: 2 / 1; object-position: 50% 60%; }
+
+/* CLiQ floor plan beside its zone list */
+@media (min-width: 960px) {
+  .duo--plan { align-items: center; column-gap: clamp(2rem, 4vw, 4rem); }
+  .duo--plan .zones { row-gap: 1.75rem; }
+}
