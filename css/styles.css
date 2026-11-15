@@ -1702,3 +1702,8 @@ p, li, dd { text-wrap: pretty; }
 }
 .lab + .lab .lab__intro { max-width: none; padding-top: 1.25rem; border-top: 1px solid var(--ink); }
 .lab + .lab .lab__intro > * { max-width: 46rem; }
+
+/* Lab hero: looping video background */
+.lab-hero + .lab { padding-top: var(--section); }
+.lab-hero .project-hero__sub { max-width: 40ch; }
+@media (prefers-reduced-motion: reduce) { .lab-hero video { display: none; } .lab-hero { background: var(--night) url("../assets/img/lab-hero-poster.jpg") center / cover; } }
