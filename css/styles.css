@@ -1645,3 +1645,5 @@ p, li, dd { text-wrap: pretty; }
 @media (min-width: 760px) { .cliq-duo { width: 66.666%; } }
 .cliq-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); }
 .cliq-trio img { width: 100%; aspect-ratio: 5 / 8; object-fit: cover; }
+.tev-gallery__grid figure:not(.tev-gallery__tall) img { aspect-ratio: 4 / 3; }
+@media (min-width: 760px) { .tev-gallery__offset--portrait { width: 50%; } }
