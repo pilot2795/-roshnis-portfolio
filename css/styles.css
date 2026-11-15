@@ -1735,3 +1735,4 @@ p, li, dd { text-wrap: pretty; }
   .tiles-edge { grid-template-columns: repeat(4, 1fr); grid-auto-rows: 24vw; }
 }
 .tiles-edge .t-tall { grid-row: span 2; }
+.chapter--flush { padding-bottom: var(--gap); }
