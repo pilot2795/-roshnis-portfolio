@@ -1599,3 +1599,11 @@ p, li, dd { text-wrap: pretty; }
 }
 
 .recog__for .link-under { color: var(--ink); font-size: 1rem; }
+
+/* About facts: clients span the full width, names flowing in columns */
+.facts__clients ul { columns: 2; column-gap: var(--gap); }
+
+@media (min-width: 640px) {
+  .facts__clients { grid-column: 1 / -1; }
+  .facts__clients ul { columns: 4; }
+}
