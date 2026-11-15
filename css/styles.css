@@ -1599,3 +1599,9 @@ p, li, dd { text-wrap: pretty; }
   .facts__clients { grid-column: 1 / -1; }
   .facts__clients ul { columns: 4; }
 }
+
+/* TATA.ev journey: image-led, no captions */
+.journey-shots > * + * { margin-top: var(--gap); }
+.journey-pair { display: grid; gap: var(--gap); }
+@media (min-width: 760px) { .journey-pair { grid-template-columns: 1fr 1fr; } }
+.journey-pair img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
