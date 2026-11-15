@@ -1718,3 +1718,19 @@ p, li, dd { text-wrap: pretty; }
 .zoning-plan .zp-t1 { font-size: 64px; stroke-width: 10px; }
 .zoning-plan .zp-t2b { font-family: var(--display); font-size: 44px; font-weight: 800; letter-spacing: .06em; stroke-width: 9px; }
 .zoning-plan .zp-t3 { font-family: var(--serif); font-size: 32px; stroke-width: 8px; }
+
+/* Edge-to-edge tiled image wall */
+.tiles-edge {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 52vw;
+  grid-auto-flow: dense;
+  gap: 4px;
+}
+.tiles-edge figure { overflow: hidden; }
+.tiles-edge img { width: 100%; height: 100%; object-fit: cover; }
+.tiles-edge .t-big { grid-column: span 2; grid-row: span 2; }
+.tiles-edge .t-wide { grid-column: span 2; }
+@media (min-width: 760px) {
+  .tiles-edge { grid-template-columns: repeat(4, 1fr); grid-auto-rows: 24vw; }
+}
