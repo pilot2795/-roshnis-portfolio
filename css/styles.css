@@ -1736,3 +1736,13 @@ p, li, dd { text-wrap: pretty; }
 }
 .tiles-edge .t-tall { grid-row: span 2; }
 .chapter--flush { padding-bottom: var(--gap); }
+
+/* Justified, uncropped edge-to-edge image grid */
+.jgrid { display: grid; gap: 4px; }
+.jgrid__row { display: flex; gap: 4px; }
+.jgrid__row figure { flex-basis: 0; min-width: 0; }
+.jgrid__row img { display: block; width: 100%; height: auto; }
+@media (max-width: 599.98px) {
+  .jgrid__row { flex-direction: column; }
+}
+.chapter:has(+ .jgrid) { padding-bottom: clamp(2.5rem, 5vw, 4rem); }
