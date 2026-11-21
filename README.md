@@ -2,7 +2,7 @@
 
 Portfolio website of Roshni Ramesh, retail experience designer.
 
-**Live site:** https://pilot2795.github.io/roshnis-portfolio/
+**Live site:** https://pilot2795.github.io/-roshnis-portfolio/
 
 ## Pages
 
